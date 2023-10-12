@@ -1,0 +1,265 @@
+/* --------Tablet------- */
+
+@media only screen and (max-width: 1024px) {
+  .head-logo{
+    writing-mode: vertical-rl;
+text-orientation: upright;
+  }
+  
+  /*.header {
+    display: none;
+  }*/
+
+  .navigation {
+    display: none;
+  }
+
+  .navigation.active {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(89, 2, 176);
+  }
+
+  .navigation li a {
+    display: inline-block;
+    margin: 0.938rem 0;
+    font-size: 1.8rem;
+  }
+
+  .toggle {
+    position: absolute;
+    z-index: 10;
+    top: 3.125rem;
+    right: 3.125rem;
+    opacity: 0.7;
+    width: 6.25rem;
+    height: 6.25rem;
+    cursor: pointer;
+    background: url(resources/menu-icon.png);
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .toggle.active {
+    opacity: 0.5;
+    width: 6.25rem;
+    height: 6.25rem;
+    background: url(resources/close-icon.png);
+    background-size: 3.125rem;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .main {
+    visibility: visible;
+  }
+
+  section img {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+
+  .moon {
+    transform: translateY(-6.25rem);
+  }
+
+  .usagi {
+    transform: translateY(0);
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  .container-bg {
+    height: 35vh;
+  }
+
+  .bg {
+    height: 60vh;
+  }
+
+  .cards {
+    gap: 1.25rem;
+  }
+
+  .card {
+    width: 15.625rem;
+    height: 23.75rem;
+  }
+
+  .contact-card {
+    max-width: 21.875rem;
+  }
+
+  .contact-header {
+    font-size: 1.8rem;
+  }
+
+  input,
+  textarea {
+    width: 80%;
+  }
+
+  input,
+  button,
+  textarea {
+    font-size: 1rem;
+  }
+
+  textarea {
+    min-height: 9.375rem;
+  }
+
+  button {
+    margin-right: 10%;
+  }
+
+  .background-glass {
+    width: 80vw;
+  }
+
+  .copyright {
+    letter-spacing: 0.125rem;
+  }
+
+  .scroll-active {
+    bottom: 4.375rem;
+  }
+}
+
+/* --------Mobile------- */
+
+@media only screen and (max-width: 480px) {
+  .head-logo {
+    top: 1.25rem;
+    left: 0.25rem;
+    padding: 0;
+    font-size: 0.1rem;
+    margin: 0;
+  }
+
+  .navigation li a {
+    margin: 0.313rem 0;
+    font-size: 1.2rem;
+  }
+
+  .toggle {
+    position: absolute;
+    top: 2.5rem;
+    right: 1.25rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    background-size: 2.188rem;
+  }
+
+  .toggle.active {
+    width: 3.125rem;
+    height: 3.125rem;
+    background-size: 2.188rem;
+  }
+
+  .stars {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .usagi {
+    -webkit-filter: drop-shadow(2px -5px 5px rgb(172, 99, 184));
+    filter: drop-shadow(2px -2px 5px rgb(172, 99, 184));
+  }
+
+  .main::before,
+  .about::before,
+  .blog::before,
+  .contact::before,
+  .blog::after,
+  .contact::after {
+    height: 1.25rem;
+  }
+  .about::before,
+  .blog::before,
+  .contact::before {
+    bottom: -1.25rem;
+  }
+
+  .blog::after,
+  .contact::after{
+    top: -1.25rem;
+  }
+
+  .about,
+  .blog,
+  .contact{
+    position: relative;
+    z-index: 10;
+    padding: 3.125rem;
+    background-color: #0a0019;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .container-bg {
+    height: 35vh;
+  }
+
+  .bg {
+    height: 60vh;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 0.938rem;
+    margin-top: 2.5rem;
+  }
+
+  input,
+  textarea {
+    width: 90%;
+  }
+
+  button {
+    margin-right: 5%;
+  }
+
+  .scroll-up {
+    position: fixed;
+    z-index: 20;
+    bottom: 1.25rem;
+    right: 0.625rem;
+    opacity: 0;
+    margin: 0 auto;
+    width: 3.125rem;
+    height: 3.125rem;
+    cursor: pointer;
+  }
+
+  .scroll-active {
+    bottom: 1.25rem;
+    opacity: 1;
+    transform: translateY(-20px);
+    pointer-events: auto;
+  }
+}
