@@ -177,13 +177,13 @@ p {
 }
   
 .first {
-    background-image: url('/resources/first_bg.jpg');
+    background-image: url('./resources/first_bg.jpg');
 }
 .second {
-    background-image: url('/resources/second_bg.jpg');
+    background-image: url('./resources/second_bg.jpg');
 }  
 .third {
-    background-image: url('/resources/third_bg.jpg');
+    background-image: url('./resources/third_bg.jpg');
 }
 
 .cards {
@@ -210,13 +210,13 @@ p {
 }
   
 .img1 {
-    background-image: url('/resources/card_first.jpg');
+    background-image: url('./resources/card_first.jpg');
 }
 .img2 {
-    background-image: url('/resources/card_second.jpg');
+    background-image: url('./resources/card_second.jpg');
 }
 .img3 {
-    background-image: url('/resources/card_third.jpg');
+    background-image: url('./resources/card_third.jpg');
 }
   
 .contact {
